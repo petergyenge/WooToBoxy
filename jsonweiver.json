@@ -1,0 +1,433 @@
+{
+    "filters": {      
+      "order": [
+        {
+          "Property": "ArtifactState",
+          "FilterValue": "on-hold",
+          "FilterType": "NOTEQUALS"
+        },
+        {
+          "Property": "ArtifactState",
+          "FilterValue": "pending",
+          "FilterType": "NOTEQUALS"
+        },
+        {
+          "Property": "ArtifactState",
+          "FilterValue": "completed",
+          "FilterType": "NOTEQUALS"
+        },
+        {
+          "Property": "ArtifactState",
+          "FilterValue": "cancelled",
+          "FilterType": "NOTEQUALS"
+        },
+        {
+          "Property": "ArtifactState",
+          "FilterValue": "failed",
+          "FilterType": "NOTEQUALS"
+        }
+      ],
+  "orderItem":[
+    {
+      "Property": "Sku",
+      "FilterValue": "book 019",    
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 020",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 022",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 023",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 028",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 029",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 036",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 038",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 027",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 030",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 031",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 025",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 026",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 034",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 033",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 035",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 037",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 032",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "E-book 043",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "73",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "CS001",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "CS002",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "CS003",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "CS004",
+      "FilterType": "NOTEQUALS"
+    },
+    {
+      "Property": "Sku",
+      "FilterValue": "CS005",
+      "FilterType": "NOTEQUALS"
+    }
+  ]
+    },
+    "orderRoot": "",
+    "order": [
+      {
+        "TargetProperty": "ExternalCode",
+        "SourceProperty": "id",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ArtifactState",
+        "SourceProperty": "status",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "TotalAmount",
+        "SourceProperty": "total",
+        "Type": "decimal"
+      },
+      {
+        "TargetProperty": "Currency",
+        "SourceProperty": "currency",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingCurrency",
+        "SourceProperty": "currency",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "OtherCurrency",
+        "SourceProperty": "currency",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ProductCurrency",
+        "SourceProperty": "currency",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingName",
+        "SourceProperty": "shipping.last_name shipping.first_name|billing.last_name billing.first_name",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingCompany",
+        "SourceProperty": "shipping.company|billing.company",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingEmail",
+        "SourceProperty": "billing.email",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingPhone",
+        "SourceProperty": "billing.phone",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "CountryCode",
+        "SourceProperty": "shipping.country|billing.country",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingZipCode",
+        "SourceProperty": "shipping.postcode|billing.postcode",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingCity",
+        "SourceProperty": "shipping.city|billing.city",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingAddress",
+        "SourceProperty": "shipping.address_1 shipping.address_2|billing.address_1 billing.address_2",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ProductAmount",
+        "SourceProperty": "total + total_tax",
+        "Type": "decimal",
+        "NeedCalculation": true
+      },
+      {
+        "TargetProperty": "ShippingVAT",
+        "SourceProperty": "shipping_tax",
+        "Type": "decimal"
+      },
+      {
+        "TargetProperty": "ShippingNote",
+        "SourceProperty": "customer_note",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "ShippingPrice",
+        "SourceProperty": "shipping_total",
+        "Type": "decimal"
+      },
+      {
+        "TargetProperty": "ShippingMode",
+        "SourceProperty": "shipping_lines[0]method_title",
+        "Type": "string",
+        "TargetValueMapper": "shippingModes"
+      },
+      {
+        "TargetProperty": "ThreePLProviderCode",
+        "SourceProperty": "shipping_lines[0]method_title",
+        "Type": "string",
+        "TargetValueMapper": "threePLProviders"
+      },
+      {
+        "TargetProperty": "PaymentMethod",
+        "SourceProperty": "payment_method",
+        "Type": "string",
+        "TargetValueMapper": "paymentMethods"
+      },
+      {
+        "TargetProperty": "UpdatedAt",
+        "SourceProperty": "date_modified_gmt",
+        "Type": "datetime"
+      },
+      {
+        "TargetProperty": "ShippingPackPoint",
+        "SourceProperty": "meta_data[key==_vp_woo_pont_point_id]value",
+        "SourceSplitBy": "|",
+        "SourceSplittedValueIndex": "2",
+        "Type": "string"
+      },
+      {
+        "TargetProperty": "WebshopOrderItems",
+        "SourceProperty": "line_items",
+        "TargetValue": "OrderItems",
+        "Type": "OrderItems"
+      }
+    ],
+    "UpdateOrderStatuses": [
+      {
+        "BoxyStatus": "New",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "WaitingForStock",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "PreparingOrder",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "Failed",
+        "WebshopStatus": "failed"
+      },
+      {
+        "BoxyStatus": "Packaging",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "WMSCanceled",
+        "WebshopStatus": "cancelled"
+      },
+      {
+        "BoxyStatus": "HandedOver",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "WMSWaitingForStock",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "DeliveryDenied",
+        "WebshopStatus": "cancelled"
+      },
+      {
+        "BoxyStatus": "InDelivery",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "Delivered",
+        "WebshopStatus": "completed"
+      },
+      {
+        "BoxyStatus": "PartiallyDelivered",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "DeliveryFailed",
+        "WebshopStatus": "failed"
+      },
+      {
+        "BoxyStatus": "Reattempt",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "Unboxed",
+        "WebshopStatus": "failed"
+      },
+      {
+        "BoxyStatus": "WaitingForPreparation",
+        "WebshopStatus": "processing"
+      },
+      {
+        "BoxyStatus": "PartiallySuccessfulDelivered",
+        "WebshopStatus": "failed"
+      }
+    ],
+    "mappers": {
+      "shippingModes": [
+        {
+          "source": "Aznapi kiszállítás (12:00-ig beérkezett rendelés esetén)",
+          "target": "SD"
+        },
+        {
+          "source": "Másnapi kiszállítás",
+          "target": "HD"
+        },
+        {
+          "source": "Foxpost Csomagpont",
+          "target": "FP"
+        },
+        {
+          "source": "GLS futárszolgálat",
+          "target": "HD"
+        },
+        {
+          "source": "DPD futárszolgálat",
+          "target": "HD"
+        },
+        {
+          "source": "Express One futárszolgálat",
+          "target": "HD"
+        },
+        {
+          "source": "MPL futárszolgálat",
+          "target": "HD"
+        },
+        {
+          "source": "Ingyenes szállítás",
+          "target": "HD"
+        }
+      ],
+      "threePLProviders": [
+        {
+          "source": "Aznapi kiszállítás (12:00-ig beérkezett rendelés esetén)",
+          "target": "BOXY"
+        },
+        {
+          "source": "Másnapi kiszállítás",
+          "target": "BOXYND"
+        },
+        {
+          "source": "Foxpost Csomagpont",
+          "target": "FOXPOST"
+        },
+        {
+          "source": "GLS futárszolgálat",
+          "target": "GLS"
+        },
+        {
+          "source": "DPD futárszolgálat",
+          "target": "DPD"
+        },
+        {
+          "source": "Express One futárszolgálat",
+          "target": "EXO"
+        },
+        {
+          "source": "MPL futárszolgálat",
+          "target": "MPL"
+        },
+        {
+          "source": "Ingyenes szállítás",
+          "target": "DPD"
+        }
+      ]
+    }
+  }
